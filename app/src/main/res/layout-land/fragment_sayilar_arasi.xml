@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B2B2B"
+    tools:context=".fragments.SayilarArasiFragment">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="SMART_BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/warningImage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/numberTwoText"
+        app:layout_constraintStart_toEndOf="@+id/numberTwoText"
+        app:layout_constraintTop_toTopOf="@+id/numberTwoText"
+        app:srcCompat="@drawable/ic_warning"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="FROM"
+        android:textColor="#FF1100"
+        android:textSize="30sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/numberOne"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/custom_input_edittext"
+            android:drawableStart="@drawable/ic_numberone"
+            android:ems="10"
+            android:fontFamily="@font/archivo_black"
+            android:inputType="number"
+            android:maxLength="9"
+            android:textColor="#FFFFFF"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:visibility="visible" />
+
+        <ImageView
+
+            android:id="@+id/delete1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-45dp"
+            android:paddingTop="7dp"
+            android:src="@drawable/ic_delete2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/numberTwo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+        <EditText
+            android:id="@+id/numberTwo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/custom_input_edittext"
+            android:drawableStart="@drawable/ic_numbertwo"
+            android:ems="10"
+            android:fontFamily="@font/archivo_black"
+            android:inputType="number"
+            android:maxLength="9"
+            android:textColor="#FFFFFF"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:visibility="visible" />
+
+        <ImageView
+
+            android:id="@+id/delete2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-45dp"
+            android:paddingTop="7dp"
+            android:src="@drawable/ic_delete2" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="TO"
+        android:textColor="#FF1100"
+        android:textSize="30sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="From"
+        android:textColor="#6E6E6E"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/numberTwo2"
+        app:layout_constraintStart_toStartOf="@+id/numberTwo2"
+        app:layout_constraintTop_toBottomOf="@+id/numberTwo2"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/numberOneText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="To"
+        android:textColor="#6E6E6E"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/numberOneText"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/numberTwoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="10"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:visibility="visible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/randomButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:clickable="true"
+        android:visibility="visible"
+        app:backgroundTint="#6E6E6E"
+        app:layout_constraintBottom_toTopOf="@+id/adView1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_swap"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/mLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/custom_input_edittext"
+        android:orientation="vertical"
+        android:paddingStart="5dp"
+        android:paddingBottom="3dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/randomButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberTwoText"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/clearText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            android:text="@string/clear"
+            android:textColor="#2B2B2B"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/cevapText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/archivo_black"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/numberTwoText"
+            app:layout_constraintStart_toStartOf="@+id/numberTwoText"
+            app:layout_constraintTop_toBottomOf="@+id/numberTwoText"
+            tools:text="0" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/warningImage"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/numberOneText"
+        app:layout_constraintStart_toEndOf="@+id/numberOneText"
+        app:layout_constraintTop_toTopOf="@+id/numberOneText"
+        app:srcCompat="@drawable/ic_warning"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/detailsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="+ Details"
+        android:textColor="#6E6E6E"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/mLayout"
+        app:layout_constraintTop_toBottomOf="@+id/mLayout"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/optionsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="+ Options"
+        android:textAllCaps="true"
+        android:textColor="#6E6E6E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="Amount Requested: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/optionsText" />
+
+    <TextView
+        android:id="@+id/istenilenMiktarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_black"
+        android:text="1"
+        android:textColor="#6E6E6E"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="Exclude Number: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/adView1"
+        app:layout_constraintStart_toStartOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/excludeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_black"
+        android:textColor="#6E6E6E"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12"
+        tools:text="4" />
+
+    <ImageView
+        android:id="@+id/deleteOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:src="@drawable/ic_delete"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/optionsText"
+        app:layout_constraintStart_toEndOf="@+id/optionsText"
+        app:layout_constraintTop_toTopOf="@+id/optionsText"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
